@@ -1,5 +1,3 @@
-# GFM tests
-
 # GFM
 
 ## Autolink literals
@@ -12,7 +10,7 @@ www.example.com, https://example.com, and contact@example.com.
 
 ## Table
 
-| a | b  |  c |  d  |
+| a | b | c | d |
 | - | :- | -: | :-: |
 
 ## Tasklist
