@@ -6,11 +6,4 @@ The graph below shows the cumulative probability distributions of V-band sky bri
 
 The results of these calculations indicate that the sky at Mauna Kea is fainter than 20.78 mag/arcsec$^2$ for 50% of the time and fainter than 21.37 mag/arcsec$^2$ for 20% of the time for any random target. (For an unbiased distribution of queue-mode nights the moon is below the horizon for about half the time, of course).
 
-Test integral: $\int_{i=1}^n$
-
-Test sum: $\sum_{i=1}^{\infty}$
-
 ![Sky brightness probability distribution](skybrightness.gif)
-
-
-
