@@ -36,7 +36,7 @@ The wavelength coverage in microns.
 
 ### Spectral Resolution
 
-This will either be the spectral resolution ($\Delta lambda$), resolving power ($\lambda / \Delta \lambda$), or velocity resolution ($\Delta v$).
+This will either be the spectral resolution ($\Delta \lambda$), resolving power ($\lambda / \Delta \lambda$), or velocity resolution ($\Delta v$).
 
 ### Availability
 
