@@ -10,6 +10,8 @@ If the exact configuration you want is not listed, you may select a configuratio
 
 The time required to achive the requested signal-to-noise as estimated by the Integration Time Calculator.  This includes all overheads and takes into account the target properties, the selected constraints, and the details of the instrument configuration.
 
+If the Time column displays a warning symbol (triangle with exclamation point) it means that information required for the calculation is missing, and you may hover over the icon to get more details.
+
 ### Slit Width & Length
 
 The slit (or IFU) dimensions in arcseconds.
