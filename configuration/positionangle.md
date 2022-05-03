@@ -1,6 +1,7 @@
 # Position Angle
 
-The position angle describes the orientation of the field or slit(s) on the sky, measured degrees East of North, and there are 5 options supported in Explore.
+The position angle describes the orientation of the field or slit(s) on the sky, measured degrees East of North.
+There are 5 options supported in Explore.
 
 * __Fixed__:
 Allows setting the PA to a fixed value that will not be changed.  Use this for MOS observations.
@@ -15,4 +16,4 @@ Explore will calculate the weighted average parallactic angle over the duration 
 Explore will select the PA that allows using the brightest guide star with the least amount of vignetting. This should be the preferred choice for most imaging observations.
 
 * __Parallactic Override__:
-This is for internal use by the observer if they need to make a small adjustment to the automatically calculated average parallactic angle in order to reach a guide starhtly.
+This is for internal use by the observer if they need to make a small adjustment to the automatically calculated average parallactic angle in order to reach a guide star.
