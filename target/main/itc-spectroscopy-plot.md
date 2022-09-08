@@ -1,12 +1,8 @@
 # Integration Time Calculator Plots
 
-The has two plots which may be selected using the buttons in the bottom right corner:
+Use the buttons in the bottom right corner to select between plots showing the Signal-to-Noise ratio and the Signal in 1-pixel.
 
-1. S/N
-
-2. Signal
-
-For observations with more than one target use the pull-down menu in the ITC panel title bar to select which target you would like to see plots of.
+For observations with more than one target use the pull-down menu in the ITC panel title bar to select the target to plot.
 
 ---
 
@@ -76,21 +72,29 @@ When calculating the area enclosed by the software aperture in the imaging case,
 
 The ITC results page reports the aperture used by the software, the fraction of the source flux it contains and the source + background signal in the peak pixel.
 
-### Adaptive Optics in the ITC
+### Adaptive Optics
 
 The ability of the AO system to correct the wavefront depends on the brightness and off-axis angle of the wavefront reference source (the AO "guide star"). The Strehl ratio of the AO-corrected core is approximated in the ITC by:
 
 $S = S_{fit} \times S_{noise} \times S_{aniso}$
 
+where $S_{fit}$ is the Strehl due to the system fitting error (i.e. limited number of actuators):
+
 $S_{fit} = e^{ -0.04 \times ( \frac{D}{r_0(\lambda)})^{5/3} }$
+
+$S_{noise}$ is the Strehl loss due to the limited number of photons from the guide star:
 
 $S_{noise} = e^{ (\frac{-1650}{\lambda})^2 (\frac{ R_{GS} }{14} )^{16} }$
 
+$S_{aniso}$ is the Strehl loss due to anisoplantism:
+
 $S_{aniso} = e^{ (\frac{-1650}{\lambda})^2 (\frac{\theta_{GS}}{12.5})^2 }$
 
-where $S_{fit}$ is the Strehl due to the system fitting error (i.e. limited number of actuators), $S_{noise}$ is the Strehl loss due to the limited number of photons from the guide star and $S_{aniso}$ is the Strehl loss due to anisoplantism. $R_{GS}$ is the R-band guide star magnitude and $\theta_{GS}$ is the off-axis angle in arcsec.
+and $R_{GS}$ is the R-band guide star magnitude and $\theta_{GS}$ is the off-axis angle in arcsec.
 
-The total signal from a point source is the sum of the AO-corrected core and the uncorrected (seeing-limited) halo. For moderate or high Strehl ratios the core dominates, for poor correction (low Strehl) the halo dominates. As in the non-AO case, the ITC defaults to an "optimum" aperture which gives a reasonable approximation of the best S/N ratio; we have taken this to be 1.18 * FWHMAO, where FWHMAO is the width of the corrected core: 
+The total signal from a point source is the sum of the AO-corrected core and the uncorrected (seeing-limited) halo. For moderate or high Strehl ratios the core dominates, for poor correction (low Strehl) the halo dominates. As in the non-AO case, the ITC defaults to an "optimum" aperture which gives a reasonable approximation of the best S/N ratio; we have taken this to be $1.18 \times FWHM_{AO}$, where $FWHM_{AO}$ is the width of the corrected core: 
+
+![PSF](psf.gif)
 
 ### Telescope Properties
 
