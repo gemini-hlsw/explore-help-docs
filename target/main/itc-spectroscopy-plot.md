@@ -1,50 +1,20 @@
 # Integration Time Calculator Plots
 
-Use the buttons in the bottom right corner to select between plots showing the Signal-to-Noise ratio and the Signal in 1-pixel.
+Use the buttons in the bottom right corner to select between plots showing the Signal-to-Noise ratio and the Signal and Background in 1-pixel.
 
 For observations with more than one target use the pull-down menu in the ITC panel title bar to select the target to plot.
 
 ---
 
-### Image Size and Aperture
-
-The derived image size (FWHM of the assumed Gaussian PSF) includes contributions from seeing, telescope diffraction, the performance of the tip-tilt secondary and many other components. See the [image quality](../../../constraints/main/iq.md) in the observing condition constraints for more details of the wavelength dependence and frequency of occurrence. For the adaptive optics case both the FWHM of the AO-corrected core and the FWHM of the uncorrected halo are given, as is the Strehl ratio.
-
-The "optimum aperture" size is described on the analysis methods page.
-
-For most uniform surface brightness (USB) calculations, the (assumed circular) software aperture corresponds to an area of 1 arcsec^2 when the "optimum aperture" analysis option is selected. (A different value can be specified by the user and the point source size is also reported for reference). However in the case of the GMOS IFU, the "optimum aperture" option corresponds to a single IFU spatial element (not 1 arcsec^2) and the spectra from that IFU fiber (nominally 5 detector rows) are summed. No optimal extraction or deconvolution is performed at this time.
-
-
-In the cross-dispersed mode with GNIRS, the source signal and sqrt(background) are color-coded for each order with dark and light shades of the same color. Only the final S/N plot (i.e. not the single-exposure chart) is shown.
-
-To view (or save) the spectra as ASCII files with tab-separated columns, click (or shift+click) on the link(s) under each plot. The wavelength units are nm; the ordinate has the same units as the graphics plot. 
-
-
-Signal to noise calculations
-See the calculation and analysis methods for more details on how the S/N for the whole observation is derived.
-
-
-Error messages - most are self explanatory; others:
-Can't find sourceGeom - usually occurs when trying to use the ITC from Netscape 6.x which doesn't work with forms.
-Please use a model line width > 1 nm to avoid undersampling of the line profile when convolved with the transmission response - the ITC currently samples the sky transmission spectrum, background and many other optical elements at 0.25-0.5nm resolution. Hence any model emission line that is narrower than 1nm may not be correctly propagated through the calculator. 
- 
 ### Calculation methods
-
-There are two modes available:
-
-1. Calculate the total signal-to-noise ratio (S/N) for an observation with the specified exposure time, number of exposures and sky subtraction method
-
-2. Calculate the total integration time to achieve the requested S/N for an observation with the specified exposure time and sky subtraction method
-
-As the S/N can vary markedly with wavelength, particular in the infrared, only the former mode is available for spectroscopic calculations.
 
 The Integration Time Calculator reports the total signal and noise for a single exposure and the signal-to-noise ratio (S/N) for a single exposure and for the whole observation. In general, the theoretical S/N (reported by the ITC as the "intermediate S/N") for a single exposure is not achievable because it is necessary to perform sky or background subtraction. In practice there are many ways to achieve this subtraction depending on the frequency of sky observations, the spatial extent of the object (e.g. it may be necessary to observe separate sky frames in a crowded field or for an extended object) and the personal preference of the observer.
 
-The ITC uses an approximation that each on-source exposure measures both signal and noise and that the process of background subtraction adds another contribution of noise. (This is a generally applicable case; it can be shown that this approximation is within 0.5 to sqrt(3) of other approaches to background subtraction). In this case the final S/N is:
+The ITC uses an approximation that each on-source exposure measures both signal and noise and that the process of background subtraction adds another contribution of noise. (This is a generally applicable case; it can be shown that this approximation is within 0.5 to $\sqrt{3}$ of other approaches to background subtraction). In this case the final S/N is:
 
 final S/N = $\frac{\sqrt{number of on-source exposures} \times signal}{\sqrt{signal + 2 \times (sourceless noise)^2}}$
 
-where "aperture ratio" is (1 + source aperture area / sky aperture area). For some instruments the aperture ratio may be defined by the user in the ITC; in others (e.g. NIRI) it is fixed equal to unity at present. The 'sourceless noise' is defined as the (quadratic) combination of background, readout and dark current noise:
+where "aperture ratio" is (1 + source aperture area / sky aperture area). For some instruments the aperture ratio may be defined by the user in the ITC; in others (e.g. NIRI) it is fixed equal to unity. The 'sourceless noise' is defined as the (quadratic) combination of background, readout and dark current noise:
 
 sourceless noise = $\sqrt{var(background) + var(readout) + var(dark)}$
 
@@ -62,15 +32,31 @@ Several examples should clarify the behaviour of this algorithm. In each case we
 
 ### Analysis methods
 
-In both imaging and spectroscopy modes the signal and total noise is calculated within a software aperture optimised to yield the best S/N ratio or within an aperture specified by the user. The 'optimum' aperture differs slightly for bright and faint sources (i.e. it depends on the dominant source of noise) but an effective compromise over a wide range of source brightness is 1.18 * FWHM for imaging a point source (see the notes associated with the IRAF routine noao.astutil.ccdtime for further information). This aperture contains 61% of the total signal for the assumed Gaussian PSF. (See the more details of the default aperture used in the AO case).
+In both imaging and spectroscopy modes the signal and total noise is calculated within a software aperture optimised to yield the best S/N ratio or within an aperture specified by the user. The "optimum" aperture differs slightly for bright and faint sources (i.e. it depends on the dominant source of noise) but an effective compromise over a wide range of source brightness is $1.18 \times FWHM$ for imaging a point source (see the notes associated with the IRAF routine `noao.astutil.ccdtime` for further information). This aperture contains 61% of the total signal for the assumed Gaussian PSF (see the Adaptive Optics section for the optimum aperture with AO).
 
-In the case of a uniform surface brightness (USB) source the 'optimum' aperture simply defaults to an area of one sq arcsec. Depending on the dominant source of noise, larger apertures will typically give higher S/N in the USB case.
+In the case of a uniform surface brightness (USB) source the "optimum" aperture simply defaults to an area of one square arcsecond. Depending on the dominant source of noise, larger apertures will typically give higher S/N in the USB case.
 
-For spectroscopy, the equivalent length integrated along the slit that yields the best S/N ratio would be 1.4 * FWHM for a Gaussian PSF. For computational simplicity, the ITC rounds this length to an integer number of pixels.
+For spectroscopy, the equivalent length integrated along the slit that yields the best S/N ratio would be $1.4 \times FWHM$ for a Gaussian PSF. For computational simplicity, the ITC rounds this length to an integer number of pixels.
 
 When calculating the area enclosed by the software aperture in the imaging case, the minimum is 9 pixels.
 
 The ITC results page reports the aperture used by the software, the fraction of the source flux it contains and the source + background signal in the peak pixel.
+
+### Image Size
+
+The derived image size (FWHM of the assumed Gaussian PSF) includes contributions from seeing, telescope diffraction, the performance of the tip-tilt secondary and many other components. See the [image quality](../../../constraints/main/iq.md) in the observing condition constraints for more details of the wavelength dependence and frequency of occurrence. For the adaptive optics case both the FWHM of the AO-corrected core and the FWHM of the uncorrected halo are given, as is the Strehl ratio.
+
+### Aperture Size
+
+For most uniform surface brightness (USB) calculations, the (assumed circular) software aperture corresponds to an area of 1 arcsec^2 when the "optimum aperture" analysis option is selected. (A different value can be specified by the user and the point source size is also reported for reference). However in the case of the GMOS IFU, the "optimum aperture" option corresponds to a single IFU spatial element (not 1 arcsec^2) and the spectra from that IFU fiber (nominally 5 detector rows) are summed. No optimal extraction or deconvolution is performed at this time.
+
+### GNIRS XD
+
+In the cross-dispersed mode with GNIRS, the source signal and sqrt(background) are color-coded for each order with dark and light shades of the same color. Only the final S/N plot (i.e. not the single-exposure chart) is shown.
+
+### Error messages
+
+"Please use a model line width > 1 nm to avoid undersampling of the line profile when convolved with the transmission response" - the ITC currently samples the sky transmission spectrum, background and many other optical elements at 0.25-0.5nm resolution. Hence any model emission line that is narrower than 1nm may not be correctly propagated through the calculator. 
 
 ### Adaptive Optics
 
