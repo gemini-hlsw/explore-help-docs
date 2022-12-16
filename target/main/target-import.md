@@ -34,8 +34,11 @@ The supported filters include:
 
 Brightness units may be specified with a column filter_unit as necessary, e.g. `z_unit` or `V_unit`.
 The supported units include:
-* `Vega mag`, `Vega`, `Vega mag/arcsec²`, `Vega/arcsec²`
-* `AB mag`, `AB`, `AB mag/arcsec²`, `AB/arcsec²`
-* `Jy`, `Jy/arcsec²`
+* `Vega mag` or `Vega`
+*  `Vega mag/arcsec²` or `Vega/arcsec²`
+* `AB mag` or `AB`
+* `AB mag/arcsec²` or `AB/arcsec²`
+* `Jy`
+* `Jy/arcsec²`
 
 If not specified, Sloan filters are assumed to be in `AB` magnitudes, and all others in `Vega` magnitudes.
