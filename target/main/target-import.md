@@ -23,7 +23,7 @@ Coodinates are assumed to be in equinox J2000.
 
 ### Proper motion:
 
-* `pmRA` (decimal milliarcseconds)
+* `pmRa` (decimal milliarcseconds)
 * `pmDec` (decimal milliarcseconds)
 
 ### Brightness:
