@@ -11,20 +11,22 @@ Rows that start with `#` or `//` are assumed to be comments and are ignored alon
 The target name is the only required parameter.
 If only the target name is supplied all other quantities will be retrieved from Simbad.
 
-* `Name` (required)
+* `NAME` or `Name` (required)
 
 ### Coordinates:
 
-Coodinates are assumed to be in equinox J2000.
+Coodinates must be in equinox J2000 and sexagesimal format.
 
-* `RAJ2000` (HH:MM:SS.sss)
-* `DECJ2000` (DD:MM:SS.ss)
-* `Epoch` (decimal years, assumed to be 2000.0 if not specified)
+* `RAJ2000` or `RaJ2000` (HH:MM:SS.sss)
+* `DECJ2000` or `DecJ2000` (DD:MM:SS.ss)
+* `EPOCH` or `Epoch` in decimal years, assumed to be 2000.0 if unspecified.
 
 ### Proper motion:
 
-* `pmRa` (decimal milliarcseconds)
-* `pmDec` (decimal milliarcseconds)
+Specified in decimal milliseconds.
+
+* `pmRA` or `pmRa`
+* `pmDEC` or `pmDec`
 
 ### Brightness:
 
@@ -35,10 +37,10 @@ The supported filters include:
 Brightness units may be specified with a column filter_unit as necessary, e.g. `z_unit` or `V_unit`.
 The supported units include:
 * `Vega mag` or `Vega`
-*  `Vega mag/arcsec²` or `Vega/arcsec²`
+* `Vega mag/arcsec²` or `Vega/arcsec²`
 * `AB mag` or `AB`
 * `AB mag/arcsec²` or `AB/arcsec²`
-* `Jy`
+* `Jansky` or `Jy`
 * `Jy/arcsec²`
 
 If not specified, Sloan filters are assumed to be in `AB` magnitudes, and all others in `Vega` magnitudes.
