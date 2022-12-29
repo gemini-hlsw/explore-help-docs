@@ -1,12 +1,10 @@
 # Target Import
 
-Click the upload button ![upload](upload.png) to import a list of targets in csv (comma separated values) format.
+Click the upload button ![upload](upload.png) to import a list of targets in csv (comma separated values) format
+([example](https://github.com/gemini-hlsw/explore-help-docs/blob/main/target/main/targets.csv)).
 
 The file **must** have a header, and the possible parameters are listed below.
 Rows that start with `#` or `//` are assumed to be comments and are ignored along with blank lines.
-
-Download an example: [targets.csv](targets.csv)
-
 
 ### Name
 
@@ -46,3 +44,4 @@ The supported units include:
 * `Jy/arcsec²`
 
 If not specified, Sloan filters are assumed to be in `AB` magnitudes, and all others in `Vega` magnitudes.
+
