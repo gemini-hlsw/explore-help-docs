@@ -5,6 +5,8 @@ Click the upload button ![upload](upload.png) to import a list of targets in csv
 The file **must** have a header, and the possible parameters are listed below.
 Rows that start with `#` or `//` are assumed to be comments and are ignored along with blank lines.
 
+Download an example: [targets.csv](targets.csv)
+
 
 ### Name
 
