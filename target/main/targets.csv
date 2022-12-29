@@ -1,0 +1,19 @@
+Name,                  RAJ2000,     DecJ2000,   Epoch,     pmRA,   pmDec,       g,        g_unit,       K,  K_unit
+#----------------|-------------|-------------|-------|---------|--------|--------|---------------|--------|---------|
+Mayall II,         00:32:46.530, +39:34:40.50,   2000,        0,       0,   14.04,         AB mag,   11.04, Vega mag
+LSPM J1403+4533,   14:03:24.357, +45:33:31.73, 2016.0, -272.345, -84.508,   18.89,             AB,   20.87,     Vega
+Markarian 132,     10:01:29.644, +54:54:38.04,   2016,         ,        , 1.48e-3,         Jansky, 1.36e-3,   Jansky 
+Markarian 573,     01:43:57.778, +02:20:59.53,   2016,         ,        ,        ,               , 2.37e-2,       Jy 
+UGC 29,            00:04:33.748, +28:18:06.17,       ,         ,        ,    19.0, AB mag/arcsec²,        ,
+IC 1528,           00:05:05.365, -07:05:36.32,       ,         ,        ,    19.9, AB mag/arcsec²,        ,
+UGC 89,            00:09:53.411, +25:55:25.46,       ,         ,        ,    17.1, AB mag/arcsec²,        ,
+Groombridge 1830,              ,             ,       ,         ,        ,        ,               ,        ,
+Lacaille 9352,                 ,             ,       ,         ,        ,        ,               ,        ,
+Lalande 21185,                 ,             ,       ,         ,        ,        ,               ,        ,
+BD+44 2051,                    ,             ,       ,         ,        ,        ,               ,        ,
+HIP 70890,                     ,             ,       ,         ,        ,        ,               ,        ,
+Lacaille 8760,                 ,             ,       ,         ,        ,        ,               ,        ,
+
+# The first header line is required.
+# The second line and the spacing of this file are purely for human-readability.
+
