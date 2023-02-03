@@ -8,7 +8,7 @@ The plot title shows the _local_ dates at sunset and sunrise.
 
 The evening and morning 12° twilights are indicated on the sides of the plot for the selected site and in the selected time zone.
 
-### Zoom ![](zoom.png) <!-- <img style="float: right;" src="zoom.png"> -->
+### Zoom ![](zoom.png)
 
 To zoom in on a region of the plot, use the mouse to select and hold one corner of the zoom area, drag to the opposite corner, and release.  A "Reset zoom" button will appear in the upper right of the plot area and clicking it will return to the default zoom level.
 
