@@ -8,7 +8,7 @@ The plot title shows the _local_ dates at sunset and sunrise.
 
 To zoom in on a region of the plot, use the mouse to select and hold one corner of the zoom area, drag to the opposite corner, and release.  A "Reset zoom" button will appear in the upper right of the plot area and clicking it will return to the default zoom level.
 
-### Moon Phase <img style="float: right;" src="moon.png">
+### Moon Phase <img align="right" src="moon.png">
 
 The upper right corner of the elevation plot panel shows the lunar illumination at the _middle_ of the the selected night.
 
@@ -16,7 +16,7 @@ The upper right corner of the elevation plot panel shows the lunar illumination 
 
 The evening and morning 12° twilights are indicated on the sides of the plot for the selected site and in the selected time zone.
 
-### Site Selector <img style="float: right;" src="site_selector.png">
+### Site Selector ![site selector](site_selector.png)
 
 The site selector buttons allow manually selecting whether to plot data for Gemini North (GN) or Gemini South (GS).
 When an observation has an instrument defined the plot will default to the site of the instrument.
