@@ -5,7 +5,7 @@
 | Key        | Action           | 
 | -----------|:-------------| 
 | ESC          | Close help |
-| ?          | Show this page |
+| ?, F1          | Show this page |
 
 ## Navigation across tabs
 
