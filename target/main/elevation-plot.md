@@ -49,7 +49,8 @@ Note that changing the `Observation Time` in the Targets panel will update the d
 
 The Night plot shows the target elevation, parallactic angle, sky brightness, and lunar elevation throughout the selected night.
 
-The Semester plot shows the target visibility from the selected site for the semester that includes the selected date.
+The Semester plot shows the target visibility from the selected site for the semester that includes the selected date which is  indicated by a vertical green line.  In this semester view the date selector changes to a semester selector to allow quickly checking the visibility in different semesters.
+
 
 ### Time Zone Selector ![](time_zone_selector.png)
 
