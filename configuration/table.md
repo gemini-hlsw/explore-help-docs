@@ -8,7 +8,10 @@ If the exact configuration you want is not listed, you may select a configuratio
 
 ### Time
 
-The time required to achive the requested signal-to-noise as estimated by the Integration Time Calculator.  This includes all overheads and takes into account the target properties, the selected constraints, and the details of the instrument configuration.
+The time required to achive the requested signal-to-noise as estimated by the Integration Time Calculator.
+This includes all overheads and takes into account the target properties, the selected constraints, and the details of the instrument configuration.
+
+If there are multiple targets defined in the observation the time will be calculated to yield the requested S/N on the *brightest* target in order to avoid saturation, and the brightest target will be indicated at the top right of the table.  The ITC output for either target may be viewed in the ITC panel using the selector at the top.
 
 If the Time column displays a warning symbol (triangle with exclamation point) it means that information required for the calculation is missing, and you may hover over the icon to get more details.
 
