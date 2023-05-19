@@ -4,6 +4,8 @@ Use the buttons in the bottom right corner to select between plots showing the S
 
 For observations with more than one target use the pull-down menu in the ITC panel title bar to select the target to plot.
 
+The ITC uses the brightness in the band that is closest to the central wavelength of the selected configuration (so different configurations may use different input brightnesses).  The input brightness is displayed in the ITC "Details" section to the left of the plot.
+
 ---
 
 ### Calculation methods
