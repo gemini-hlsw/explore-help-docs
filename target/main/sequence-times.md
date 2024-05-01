@@ -2,7 +2,7 @@
 
 The title bar of the Sequence panel displays three observation times:
 
-The **Planned** time is the total time that will be charged for the observation.
+The **Planned** time is the total time that will be charged to the program for the observation.
 This includes acquisitions and _program_ calibrations.
 This does _not_ include partner calibrations such as GMOS flats and arcs.
 
