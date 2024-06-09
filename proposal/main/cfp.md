@@ -10,4 +10,4 @@ Select from one of the open Call for Proposals (CfP).
 | Poor Weather     | Continuous | Semester    | Sci Ops        |
 | Large Program    | 1 year     | 6 mo - 3 yr | LP TAC         |
 
-See the Gemini [Phase-I page](https://www.gemini.edu/observing/phase) for additional details.
+See the Gemini [Phase-I page](https://www.gemini.edu/observing/phase-i) for additional details.
