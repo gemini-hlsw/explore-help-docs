@@ -28,6 +28,10 @@ Specified in decimal milliarcseconds.
 * `pmRA` or `pmRa`
 * `pmDEC` or `pmDec`
 
+### Parallax:
+
+* `Parallax` or `parallax` in milliarcseconds.
+
 ### Brightness:
 
 The target brightness may be specified in most broad-band filters with an optional unit.
