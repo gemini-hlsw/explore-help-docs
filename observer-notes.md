@@ -1,6 +1,6 @@
-# Observer Notes
+# Note for Observer
 
-The "Observer Notes" section may be used to provide any information that you think may be useful for the nighttime observer.
+This section may be used to provide any information that you think may be useful for the nighttime observer.
 
 For example, you could answer potential questions that the observer may have, like what to do if a star in the field saturates, or if the science target brightness may differ from the expected value and what to do, or provide the ingress and egress times of a transit.
 
