@@ -7,7 +7,8 @@ Controls UI (upper left)
 - Acq. Offsets
 - Scroll to zoom
 
-AGS Warnings (lower left)
+AGS Info (lower left)
+- Normally displays the guide star ID, brightness, and coordinates with the expected guide speed (Fast, Medium, Slow)
 - "Mode or ITC not available" indicates that the instrument field of view and guide star cannot be displayed because a configuration has not been selected.
 - "No guide star available" indicates that there is no guide star bright enough for the selected conditions.
 
