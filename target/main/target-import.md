@@ -36,7 +36,7 @@ Specified in decimal milliarcseconds.
 * `Redshift` or `redshift`
 * `RadialVelocity` or `rv` in km/s
 
-## Brightness:
+### Brightness:
 
 The target brightness may be specified in most broad-band filters with an optional unit.
 The supported filters include:
