@@ -23,7 +23,7 @@ Coodinates must be in equinox J2000 and sexagesimal format.
 
 ### Proper motion:
 
-Specified in decimal milliarcseconds.
+Specified in decimal milliarcseconds per year.
 
 * `pmRA` or `pmRa`
 * `pmDEC` or `pmDec`
