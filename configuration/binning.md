@@ -22,4 +22,4 @@ In the spatial direction:
 
 Additional rules applied to the default binning:
 - MOS spatial binning is capped at 2
-- IFU binning must be $1 \times 1$
+- IFU binning is always $1 \times 1$
