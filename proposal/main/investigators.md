@@ -9,7 +9,7 @@ There are three investigator "roles":
 
 Read-only CoIs are the default when clicking the "Add" button.  They may see all the targets and observations and proposal details, but the only thing that they may change is their own personal details (email address, partner affiliation, etc).
 
-Full-access CoIs, on the other hand, have virtually the same privileges as the PI.  They may edit targets, observations, and proposal details and even invite new read-only CoIs.  The only thing that a full-access CoI can *not* do it change the role of other CoIs.
+Full-access CoIs, on the other hand, have virtually the same privileges as the PI.  They may edit targets, observations, and proposal details and even invite new read-only CoIs.  The only thing that a full-access CoI can *not* do it change the roles of other CoIs.
 
 ### Invitations
 
@@ -21,7 +21,7 @@ Explore will query your current email address from ORCiD when you log in to Expl
 
 ### Partner
 
-Enter your Gemini partner affiliation, and "No Partner" if you are not affiliated with any Gemini partner.
+Enter your Gemini partner affiliation, or "No Partner" if you are not affiliated with any Gemini partner.
 
 ### Thesis
 
