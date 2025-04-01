@@ -1,6 +1,6 @@
-# Matching Configurations
+# Available Configurations
 
-The Matching Configurations table lists all instrument configurations that meet the specified requirements (mode, wavelength, spectral resolution, wavelength coverage, focal plane, focal plane size, and "special capabilities").
+The Available Configurations table lists all instrument configurations that meet the specified requirements (mode, wavelength, spectral resolution, wavelength coverage, focal plane, focal plane size, and "special capabilities").
 
 If the exact configuration you want is not listed, you may select a configuration that is close and used the "Advanced Configuration" to achive the desired configuration.
 
