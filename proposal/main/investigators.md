@@ -17,7 +17,7 @@ Co-Investigators are added through an invitation process.  To invite a new CoI, 
 
 ### Email
 
-Explore will query your current email address from ORCiD when you log in to Explore. If you update your email address in ORCiD you can force Explore to update by logging out and back in.  If your email address in ORCiD is not public you will need to manually update your email.
+Explore will query your current email address from ORCiD when you log in to Explore. If you update your email address in ORCiD you can force Explore to update by logging out and back in.  If your email address in ORCiD is not public you will need to manually input it.
 
 ### Partner
 
