@@ -23,7 +23,7 @@ AGS Info (lower left)
 - "Mode or ITC not available" indicates that the instrument field of view and guide star cannot be displayed because a configuration has not been selected.
 - "No guide star available" indicates that there is no guide star bright enough for the selected conditions.
 - "No catalog stars available" indicates that there were no stars found in the guider patrol field.
-- Blinking orange indicator with the tooltip "Loading catalog stars" !(Loading_catalog_stars.png) means that Explore is attempting to download guide star data from the [Gaia database] (https://gea.esac.esa.int/archive).  This is typically accompanied by the previous warning.
+- Blinking orange indicator with the tooltip "Loading catalog stars" ![Loading catalog stars](Loading_catalog_stars.png) means that Explore is attempting to download guide star data from the [Gaia database](https://gea.esac.esa.int/archive).  This is typically accompanied by the previous warning.
 
 AGS Rules:
 1. Select all the stars that allow "Fast" guiding.  If there are none then select all the stars that support "Medium" guiding.  If there are none then select all the stars that can be used with the "Slow" guide speed.
