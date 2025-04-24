@@ -7,7 +7,7 @@ Controls UI (upper left)
 - Acq. Offsets
 - Scroll to zoom
 
-Field of View (lower left)
+Field of View (lower left) ![Field of view](fov.png)
 
 Cursor Coordinates (lower right)
 
