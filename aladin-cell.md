@@ -11,7 +11,7 @@ Field of View (lower left) ![Field of view](fov.png)
 
 Cursor Coordinates (lower right) ![coordinates](coordinates.png)
 
-Center Target button (lower right)
+Center Target button (lower right) ![center target](center_target.png)
 
 Zoom buttons (middle right)
 
