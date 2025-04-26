@@ -9,7 +9,7 @@ Controls UI (upper left)
 
 Field of View (lower left) ![Field of view](fov.png)
 
-Cursor Coordinates (lower right)
+Cursor Coordinates (lower right) ![coordinates](coordinates.png)
 
 Center Target button (lower right)
 
