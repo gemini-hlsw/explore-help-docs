@@ -12,7 +12,7 @@ Select from one of the open Call for Proposals (CfP).
 
 See the Gemini [Phase-I page](https://www.gemini.edu/observing/phase-i) for additional details.
 
-<hr>
+---
 
 ### Partnership Requirements
 
