@@ -4,6 +4,8 @@ The Available Configurations table lists all instrument configurations that meet
 
 If the exact configuration you want is not listed, you may select a configuration that is close and used the "Advanced Configuration" to achive the desired configuration.
 
+Note that Gemini North configurations will not be listed for targets with Dec < -37° and Gemini South configurations will not be listed for targets with Dec > +28°.
+
 ## Table Columns
 
 ### Time
