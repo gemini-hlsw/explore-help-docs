@@ -13,7 +13,7 @@ Full-access CoIs, on the other hand, have virtually the same privileges as the P
 
 ### Invitations
 
-Co-Investigators are added through an invitation process.  To invite a new CoI, click the add_user button which will add a blank row to the Investigators table and then click the send_invitation button.  This will open a dialog to enter the CoI's email address and send them a single-use key with instructions on how to redeem the key (which requires an ORCiD).  It is recommended to invite all CoIs to let them know that they are a part of the proposal, but it is not required at this time, and invitations do not need to be redeemed before the proposal deadline.
+Co-Investigators are added through an invitation process.  To invite a new CoI, click the add_user button which will add a blank row to the Investigators table and then click the send_invitation button.  This will open a dialog to enter the CoI's email address and send them a single-use key with instructions on how to redeem the key (which requires an ORCiD).  All CoIs must be invited before submitting the proposal.  The invitations may be accepted at any time.
 
 ### Email
 
