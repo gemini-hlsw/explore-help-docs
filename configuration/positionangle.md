@@ -20,4 +20,4 @@ Automatically selects the PA that allows using the brightest guide star with the
 * __Parallactic Override__:
 This may be used by the observer if a small adjustment to the automatically calculated average parallactic angle is needed to reach a guide star.
 
-__Note:__ The Position Angle editor is disabled when the Cassegrain Rotator is not following the sky (MAROON-X).
+__The Position Angle editor is disabled when the Cassegrain Rotator is not following the sky (MAROON-X).__
