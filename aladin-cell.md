@@ -1,4 +1,4 @@
-# Aladdin 
+# Aladin 
 
 Controls UI (upper left)
 - Show Catalog
