@@ -1,6 +1,6 @@
 # Sequence Panel
 
-## Title bar
+## Observation Times
 
 The title bar of the Sequence panel displays three observation times:
 
