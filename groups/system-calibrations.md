@@ -10,8 +10,11 @@ The targets will be selected based on the time of the observation.
 One specphot standard star observation will be generated for each unique instrument configuration (grating, wavelength, filter, FPU, read mode, and binning).
 For programs with multiple wavelength settings used to span the gaps between CCDs, only one of these wavelength settings will be taken.
 Baseline relative flux calibration is a smooth function which can be interpolated across the detector gaps.
+
 Targets are selected from the sources listed on the [GMOS spectrophotometric standard star page](https://www.gemini.edu/instrumentation/gmos/calibrations#SpectStand).
 Observations are not guaranteed to be obtained the same nights as the science observations. 
+
+The wavelength where the specphot standard S/N is measured ("λ for S/N") defaults to the average value used by the science observations that share the same configuration.
 
 ### Spectroscopic Twilight Flats
 
