@@ -2,9 +2,9 @@
 
 Select the mode to populate the table of configurations on the right:
 
-- Spectroscopy: includes all spectroscopic modes of all facility<sup>1</sup> and resident visitor<sup>2</sup> instruments.
+- Spectroscopy: includes all spectroscopic modes of all facility$^1$ and resident visitor$^2$ instruments.
 
-- Imaging: includes imaging modes of all facility<sup>1</sup> and resident visitor<sup>2</sup> instruments.
+- Imaging: includes imaging modes of all facility$^1$ and resident visitor$^2$ instruments.
 
 - Visitor: select this mode if you wish to bring your own instrument to Gemini.
 See the [Gemini Visiting Instrument Program web page](https://www.gemini.edu/instrumentation/instrumentation/visiting-instrument-program) for details.
