@@ -10,7 +10,7 @@ Select the mode to populate the table of configurations on the right:
 See the [Gemini Visiting Instrument Program web page](https://www.gemini.edu/instrumentation/instrumentation/visiting-instrument-program) for details.
 
 - Keck: select this mode to create observations using Keck instruments
-- Subaru: select this mode to create observations using Subary instruments
+- Subaru: select this mode to create observations using Subaru instruments
  
 ---
 
