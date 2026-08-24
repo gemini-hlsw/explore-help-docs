@@ -31,3 +31,7 @@ See the Gemini [Phase-I page](https://www.gemini.edu/observing/phase-i) for addi
 
 5. [Poor Weather](https://www.gemini.edu/observing/phase-i/pw) proposals  
    a. The PI must be affiliated with a participating partner (US Open Access policy does not apply).  
+
+### Proposal Deadline
+
+The proposal deadline is determined by the affiliation of the Principal Investigator.
