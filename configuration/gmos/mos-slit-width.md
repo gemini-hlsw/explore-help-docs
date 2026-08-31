@@ -1,0 +1,2 @@
+# GMOS MOS Slit Width
+
