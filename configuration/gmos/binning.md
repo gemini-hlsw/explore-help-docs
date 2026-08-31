@@ -1,10 +1,10 @@
-# Binning
+# GMOS Binning
 
-### x-bin $\times$ y-bin
+The binning is specified as **x-bin $\times$ y-bin**.
 
-| Instrument | x-bin    | y-bin   |
-| ---------- | -------- | ------- |
-| GMOS       | spectral | spatial |
+x-binning is along the spectral direction.
+
+y-binning is along the spatial direction.
 
 The binning along each direction is chosen to be the largest that provides more than 2.5 pixel sampling across a resolution element.
 
