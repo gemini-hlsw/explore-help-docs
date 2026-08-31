@@ -1,3 +1,3 @@
-# GNIRS Filters
+# GNIRS Filter
 
 
