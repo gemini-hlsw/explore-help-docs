@@ -2,7 +2,7 @@
 
 **Slow, Low Gain** = standard science mode
 
-**Slow, High Gain** = engineering only ⚙️
+⚙️ **Slow, High Gain** = for engineering use only
 
 **Fast, Low Gain** = acquisitions / rapid readout
 
