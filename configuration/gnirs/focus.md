@@ -1,3 +1,7 @@
 # GNIRS Focus
 
-GNIRS focus defaults to "Best" and this may only be changed by staff for instrument engineering and calibration.
+Defaults to **Best**, the instrument's automatically determined focus. Setting it to **Custom**
+reveals a **Focus Motor Steps** field to enter an explicit focus position by hand.
+
+Both fields are for instrument engineering and calibration, and may only be changed by Gemini
+staff.
