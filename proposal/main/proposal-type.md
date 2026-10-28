@@ -1,10 +1,5 @@
 # Regular Proposal Type
 
-Most Calls for Proposals offer a single kind of proposal, and the type is then fixed by the call
-itself: a Fast Turnaround call can only produce a Fast Turnaround proposal, a Large Program call
-a Large Program proposal, and so on. This selector is shown only when the selected call offers a
-choice, which at present means the **Regular Semester** call.
-
 | Type | Observing |
 |---|---|
 | Queue | Gemini staff carry out the observations on your behalf, fitting them into the nightly queue as the requested conditions occur. Most programs use this mode. |
@@ -20,5 +15,5 @@ the partner splits, the exchange partner, and the **JWST Synergy**, **US Long Te
 **AEON / Multi-Facility** settings all carry over unchanged.
 
 **Consider for Band 3** applies to Queue proposals only. It disappears when you switch to
-Classical, and reappears set to *Consider* when you switch back, so check it before submitting if
+Classical, and reappears set to *Yes* when you switch back, so check it before submitting if
 you had set it to something else.
