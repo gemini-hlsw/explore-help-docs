@@ -1,22 +1,19 @@
 # Region
 
-A Target of Opportunity has no coordinates when the proposal is written, because the event has
-not happened yet. Instead it declares the **region** of sky the trigger is expected to fall in,
-so that the observation can be checked against the instrument, the site and the observing
-constraints before anything is triggered.
+A Target of Opportunity has no coordinates when the proposal is written.
+Instead one declares the **region** of sky the trigger is expected to fall in.
 
-The region is the area common to two arcs: one in right ascension and one in declination. Each is
-set independently with the **RA Arc** and **Dec Arc** selectors.
+The region is the area common to two arcs: one in right ascension and one in declination. 
+Each is set independently with the **RA Arc** and **Dec Arc** selectors.
 
 | Arc | Covers |
 |---|---|
 | Full | The whole range of that coordinate. |
 | Partial | A range between a start and an end value, which appear as two fields below the selector. Both ends are included in the arc. |
-| Empty | Nothing. An empty arc in either coordinate leaves a region with no sky in it. |
 
 A new Target of Opportunity starts with both arcs set to *Full*, that is, the whole sky. Narrow
-the region as far as your science case allows: a smaller region gives a better idea of what the
-trigger will need.
+the region as far as your science case allows: a smaller region gives a better idea of where the 
+trigger will be and improves the Observatory's ability to efficiently fill the queue.
 
 ### Partial arcs
 
@@ -30,6 +27,5 @@ Switching an arc back to *Full* or *Empty* discards its start and end values.
 
 ### Asterisms
 
-A Target of Opportunity is the only target in its observation. The option to add one is offered
-only while the observation has no targets, and once the asterism holds one, the Add Target button
-is disabled.
+A Target of Opportunity may be the only target in its observation. 
+The option to add a ToO target is only available while the observation has no targets.
