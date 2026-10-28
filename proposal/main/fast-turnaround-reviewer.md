@@ -2,7 +2,7 @@
 
 Fast Turnaround proposals are evaluated through a peer review process: each proposal designates one
 person who agrees to review a set of other Fast Turnaround proposals submitted in the same cycle.
-Failing to complete the assigned reviews may result in the proposal being removed from consideration.
+Failing to complete the assigned reviews will result in the proposal being removed from consideration.
 
 Select the reviewer from the list of investigators on this proposal. If no reviewer is selected,
 the **Principal Investigator** is used by default (the PI's name is shown as a placeholder).
@@ -23,5 +23,4 @@ Notes:
 * If no investigator has a PhD, no mentor can be selected. Add a qualified Co-Investigator
   or update the Education field in the Investigators table.
 
-See the Gemini [Fast Turnaround page](https://www.gemini.edu/observing/phase-i/ft) for details
-of the review process.
+See the Gemini [Fast Turnaround page](https://www.gemini.edu/observing/phase-i/ft) for details of the review process.
