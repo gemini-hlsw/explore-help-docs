@@ -10,9 +10,8 @@ Enter the total request in hours, up to two decimal places. Values must lie betw
 anything outside that range is rejected and the field is marked as invalid.
 
 The **Minimum %** beside Total is the smallest share of that request that would still make the
-program worth carrying out, and the hours shown next to it are that percentage of Total. It is
-a separate value from the **Minimum %** at the top of the panel, which applies to the time
-calculated from the observations.
+program worth carrying out. It is a separate value from the **Minimum %** at the top of the panel, 
+which applies to the time calculated from the observations.
 
 ### The calculated rows
 
