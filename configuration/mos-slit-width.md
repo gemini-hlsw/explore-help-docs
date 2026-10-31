@@ -1,8 +1,7 @@
-# Custom Slit Width
+# MOS Slit Width
 
-The slit width to assume for a custom MOS mask, chosen from the instrument's standard list of
-widths. A reset icon appears beside the field once it differs from the configuration's default,
-to revert back to it.
+The slit width to assume for a MOS mask, chosen from the instrument's standard list of slit widths. 
+A reset icon appears beside the field once it differs from the configuration's default, to revert back to it.
 
 Once the proposal has been accepted and a mask is bound in **Mask ID**, the physical mask defines
 the actual slit width, so this field switches to showing that value read-only rather than letting
