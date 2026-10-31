@@ -29,14 +29,8 @@ flexibility, so use it only when it is truly required.
 
 Observations with a ToO activation of **Rapid** or **Interrupting** are always
 **Uninterruptible**. Setting one of these activations automatically switches the scheduling mode
-to Uninterruptible, and the mode selector is locked while the activation remains. Lowering the
+to Uninterruptible, and the mode selector is locked while the ToO activation remains. Lowering the
 activation back to **None** leaves the mode as Uninterruptible; change it manually if desired.
 
 Because only an Interrupting ToO can interrupt other observations, and it can never interrupt an
 Uninterruptible one, a Target of Opportunity is never interrupted by another.
-
-### Where it is shown
-
-When the mode is not Unconstrained, a *No Splitting* or *Uninterruptible* badge is shown in the
-Scheduling tile title and next to the group of observations sharing the same scheduling
-constraints in the observation tree.
