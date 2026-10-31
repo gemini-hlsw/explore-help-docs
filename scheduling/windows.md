@@ -1,6 +1,6 @@
 # Scheduling Windows
 
-Timing windows restrict *when* this observation may be scheduled, in UTC. With none defined the
+Timing windows restrict *when* this observation may be scheduled. With none defined the
 observation may be scheduled at any time; each window narrows or excludes a range.
 
 Click **Window** to add one, starting now and running forever; click a row to select it and edit
@@ -9,8 +9,7 @@ is marked with a warning icon.
 
 ### Editing a window
 
-* **Include** / **Exclude** — whether the observation may only be scheduled during this window,
-  or may not be scheduled during it.
+* **Include** / **Exclude** — whether the observation may only be scheduled during this window, or may not be scheduled during it.
 * **from** — when the window starts.
 * **Forever** — the window has no end.
 * **Through** — the window ends at a specific date and time, which must be after the start.
