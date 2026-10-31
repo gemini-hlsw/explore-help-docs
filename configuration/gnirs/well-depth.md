@@ -1,11 +1,22 @@
 # GNIRS Well Depth
 
-How much signal a pixel can hold before saturating:
+The well depth sets the detector bias voltage, which determines how much charge each pixel can hold before it
+saturates. It does not change the read noise or the minimum exposure time.
 
-**Shallow** — a lower full well. The default for the Blue camera.
+| Well depth | Bias   | Full well    | Non-linear above |
+|------------|--------|--------------|------------------|
+| Shallow    | 300 mV | 90,000 e⁻    | 5,000 ADU        |
+| Deep       | 600 mV | 180,000 e⁻   | 10,000 ADU       |
 
-**Deep** — a higher full well, able to hold more signal before saturating. The default for the
-Red camera, which typically sees a higher thermal background.
+**Shallow** - for near-infrared observations (X, J, H and K). This is the default for the blue cameras.
 
-A reset icon appears beside the field once it differs from the camera's default, to revert back
-to it.
+**Deep** - for thermal-infrared observations (L and M), where the sky background is high, or for very bright
+targets. This is the default for the red cameras. The higher bias exacerbates defects in the detector substrate,
+causing a noticeable increase in the number of noisy or "hot" pixels, so Deep should only be used when the extra
+well depth is needed.
+
+The well depth applies to the whole observation, including the acquisition, and is used by the ITC when estimating
+saturation.
+
+This field can be changed after clicking **Customize**. A reset icon appears beside the field once it differs from
+the default for the camera, to revert back to it.
