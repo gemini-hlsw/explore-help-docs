@@ -96,3 +96,26 @@ This will also allow you to step through the blind offset star options, in case 
 
 
 ## Set Base Position
+
+The **base position** is the position an observation points to. Guide star selection is also based on it. By default it is calculated from the observation's science targets, but you can set it explicitly using **Set Base Position**.
+
+When no base position has been set, the default base position is:
+- For an observation with a single target, the base is that target's position.
+- For an observation with several targets, the base is the center of all the targets' positions.
+
+Target positions are evaluated at the time of the observation, so the default base follows each target's proper motion or ephemeris.
+
+An explicit base position replaces the default. You might set one to center the field differently from the default, for example to balance several targets within the field of view.
+
+Keep in mind:
+- **Fixed coordinates.** An explicit base position is a fixed RA and Dec. Proper motion is not applied, and it does not follow a moving target.
+- **Your science targets are unchanged.** Your targets keep their own positions; only the pointing center moves.
+
+When an explicit base position is set, AGS uses it:
+- **The catalog search** is centered on the explicit base position rather than on your targets.
+- **Reachability** of each candidate within the guide probe's patrol field is evaluated from the explicit base position.
+- **Vignetting** is still checked against your science targets at their own positions, so guide stars that would place the probe arm over a target are rejected as usual.
+
+Moving the base position can therefore change which guide stars are available and which one is chosen.
+
+To return to the default base position, clear the explicit base position.
