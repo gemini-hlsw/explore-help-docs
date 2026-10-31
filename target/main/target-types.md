@@ -10,8 +10,10 @@ Add a target that is not in Simbad
 
 
 ## Target of Opportunity
-Describe types, or is that somewhere else?
 
+A Target of Opportunity (ToO) target is for an object whose position is not known in advance, such as a transient announced by a survey alert. 
+You prepare the observation ahead of time using a placeholder ToO target. 
+When the target becomes known you may create an observation and it will be pre-approved for execution.
 
 
 ## Automatic Blind Offset
