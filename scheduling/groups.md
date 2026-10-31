@@ -17,8 +17,7 @@ are two kinds, chosen with the **Type** selector when the group is created:
   start. A maximum delay cannot be set together with Same Night; enabling one clears the other.
   The minimum must not exceed the maximum.
 
-The Scheduler always respects each observation's own timing constraints in addition to these
-group-level rules.
+The Scheduler always respects each observation's own absolute timing constraints in addition to these relative group-level rules.
 
 ### OR groups
 
