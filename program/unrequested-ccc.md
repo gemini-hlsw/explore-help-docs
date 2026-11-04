@@ -1,27 +1,53 @@
 ## Unrequested Coordinates + Configurations + Constraints
 
-This panel displays combinations of target coordinates, instrument configurations, and observation constraints (CCC) 
-that do not match any CCC formally approved through the original proposal or through subsequent program change requests. 
+This tile lists the combinations of target coordinates, instrument configuration, and observing constraints (CCC)
+used by active observations in this program that are not covered by any CCC approved in the original proposal
+or requested since. The number in the tile title is the number of such CCCs.
+
+Observations whose CCC appears here cannot be set to Ready until a request for that CCC has been approved.
+Inactive observations and calibrations are not listed.
+
+### Reading the table
+
+Each row is one CCC. **Target** shows the target name, or `<multiple>` when the observations in the row use
+different targets. **RA** and **Dec** are the coordinates (or a range, for a target defined as a region of sky).
+**Instrument**, **FPU** and **Configuration** describe the observing mode, **AO** shows the adaptive-optics mode if any,
+and **IQ**, **CC**, **SB** and **WV** are the observing constraints. **Obs** lists the observations that use the CCC;
+click an observation ID to open it.
 
 ### Definition of a Unique CCC
 
-A CCC is considered unique based on the following criteria:
+An observation is covered by an approved CCC when all of the following hold:
 
-**Coordinates** include a positional buffer around the originally requested coordinates equal to one-half of the instrument’s field of view. 
-Coordinate changes within this buffer are not treated as a new CCC.
+**Coordinates** lie within a buffer around the approved position equal to the radius of the instrument's
+science field, so the base position may be moved anywhere that was visible from the approved pointing.
+For MOS the buffer is half the imaging field. A target defined as a region is covered only by an approved
+region that contains it.
 
-**Configuration** includes the selected instrument, observing mode (imaging, long-slit, IFU, or MOS), and disperser. 
-Changes to other parameters such as filter, central wavelength, or detector binning do not by themselves define a new CCC.
+**Configuration** matches the approved instrument and observing mode (imaging, long slit, IFU or MOS) and the
+key optical elements: the grating or disperser for spectroscopy, the IFU unit for IFU modes, the camera and prism
+for GNIRS, and the resolution mode for GHOST. For imaging, the filters must be among those approved: removing a
+filter is allowed, adding one is not. Other parameters, such as central wavelength, binning, read mode or
+exposure times, may be changed freely. The adaptive-optics mode must match exactly.
 
-**Conditions** include the originally requested observing conditions as well as any more permissive (worse) conditions. 
-Selecting worse conditions than originally requested does not create a new CCC.
+**Constraints** are the same as, or less demanding than, the approved image quality, cloud extinction,
+sky background and water vapor. Selecting worse conditions does not create a new CCC.
 
-For example, a user may adjust the target coordinates slightly (within the positional buffer), modify the filter, 
-the central wavelength, or binning, and select worse observing conditions, all without requiring approval of a new CCC.
+**Scheduling mode** is also part of the CCC, although it is not shown as a column. Approval of a more
+restrictive scheduling mode covers less restrictive ones, so changing to a more restrictive mode requires approval.
+
+For example, you may move the target slightly, drop an imaging filter, change the central wavelength or binning,
+and relax the constraints without needing a new approval.
 
 ### Requesting Approval for a CCC
 
-If an unrequested CCC is required, select the relevant row or rows in this table and click Request Approval. 
-This action opens the Request Editor, where a justification for the proposed program changes must be provided.
-Selecting Submit sends the request to the Head of Science Operations at the site of the observations. 
-Once submitted, the CCC will appear in the Requested Coordinates + Configurations + Constraints table with a status of Pending until the review process is complete.
+Select one or more rows by clicking them (or use **All** and **None**), then click **Request Approval**.
+This opens the Request Editor, where you must enter a justification for the change; the same justification is
+attached to every selected CCC. Click **Submit** to send the request to the Head of Science Operations at the
+site of the observations. The CCC then moves to the Requested Coordinates + Configurations + Constraints table
+with the status 🟡 Requested until it has been reviewed.
+
+If a request is denied, the CCC is not offered here again. Modify the observations to use an approved CCC,
+or change them to a new CCC that can be requested.
+
+Read-only Co-Investigators can view this table but cannot request approval.
